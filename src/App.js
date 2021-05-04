@@ -1,23 +1,64 @@
-import logo from './logo.svg';
+import logo from "./images/logo.svg";
+import mockup from "./images/illustration-mockups.svg";
+import facebook from "./images/logo-facebook.svg";
+import instagram from "./images/logo-instagram.svg";
+import twitter from "./images/logo-twitter.svg";
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
+<header>
+      <img src={logo} alt="logo"/>
+    </header>
+    <main>
+      <div class="main mockup">
+        <img src={mockup} alt="mockup"/>
+      </div>
+      <div class="main writeup">
+        <h1>Build The Community Your Fans Will Love</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <button>Register</button>
+      </div>
+    </main>
+    <footer>
+      <div class="icon">
+        <div>
+          <img
+            class="facebook"
+            src={facebook}
+            alt="facebook"
+            width="40px"
+            height="40px"
+          />
+        </div>
+        <div>
+          <img
+            class="twitter"
+            src={twitter}
+            alt="twitter"
+            width="40px"
+            height="40px"
+          />
+        </div>
+        <div>
+          <img
+            class="instagram"
+            src={instagram}
+            alt="instagram"
+            width="40px"
+            height="40px"
+          />
+        </div>
+      </div>
+    </footer>
+
     </div>
   );
 }
